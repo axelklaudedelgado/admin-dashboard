@@ -18,6 +18,10 @@ html {
 
 .header {
     background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2.5fr 1fr;
+    padding: 20px 40px;
 }
 
 .sidebar {
