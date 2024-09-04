@@ -33,23 +33,38 @@ html {
 
 .mainContent {
     background-color: #e2e8f0;
-    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding-bottom: 40px;
+}
+
+.dynamicMain {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .staticMain {
     display: grid;
+    grid-template-rows: 70px 400px 70px 1fr;
+    grid-template-columns: 350px;
+    padding-right: 30px;
+}
+
+.staticCards {
+    height: 400px;
+    outline: 1px solid black;
 }
 
 .cards {
-    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
 
 .card {
-    height: 200px;
+    min-height: 350px;
     outline: 1px solid black;
 }
